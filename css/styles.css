@@ -1,44 +1,33 @@
 #mainpanel {
   text-align: center;
 }
-
-
 .container {
 }
-
 ol {
   text-align: left;
 }
-
 p, ol, li, h1, .white, label {
   color: white;
 }
-
 .white {
   font-size: 44px;
   font-family: sans-serif;
 }
-
 ol, label {
   font-size: 24px;
 }
-
 #bg {
   position: fixed; top: 0; left: 0;
   max-width: 100%;
 }
-
-
 .col-md-6 {
   margin-top: 30%;
 }
-
 button {
   margin-top: 25px;
   font-size: 40px;
   font-family: sans-serif;
 }
-
 .button {
     position: relative;
     background-color: #4CAF50;
@@ -54,7 +43,6 @@ button {
     overflow: hidden;
     cursor: pointer;
 }
-
 .button:after {
     content: "";
     background: #90EE90;
@@ -67,14 +55,12 @@ button {
     opacity: 0;
     transition: all 0.8s
 }
-
 .button:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
     transition: 0s
 }
-
 h3 {
   /* margin: 20px; */
   font-family: "Paytone One";
@@ -82,7 +68,6 @@ h3 {
   text-transform: uppercase;
   letter-spacing: -2px;
 }
-
 h3 span {
   display: block;
   margin: 11px 0 17px 0;
