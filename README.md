@@ -28,6 +28,8 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * _Returns an array counting to 14_
 * _Returns the word "ping-pong"_
 * _Returns an array counting to the number inputted by the user_
+* _Returns are amended to a new list item without the previous answer attached_
+
 
 
 
