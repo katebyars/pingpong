@@ -1,44 +1,63 @@
-# _{Application Name}_
+# _{Ping Pong}_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _{A game of ping pong, based on number inputs}, {July 14th, 2017}_
 
-#### By _**{List of contributors}**_
+#### By _**{Kate Byars}**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_{This game was created for the Introduction to Programming course at Epicodus, Portland.}_
 
-## Specifications
+## Specifications following BDD
 
-* _User can enter a value._
+* _Returns any value entered._
+  * _Example input : 1_
+  * _Example output : 1_
 * _Returns the value of 1_
+  * _Example input : 1_
+  * _Example output : 1_
 * _Returns an array counting to 2_
+  * _Example input : 2_
+  * _Example output : 1, 2_
 * _Returns are amended as a new item below the previous answer_
-* _Returns "ping"_
-* _Returns "pong"_
-* _Returns the word "ping-pong"_
-* _Returns an array counting to the number inputted by the user_
-* _Returns are amended to a new list item without the previous answer attached_
-
-
-
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+  * _Example input : 3_
+  * _Example output, below previous output: 1, 2, 3_
+* _Returns "ping" upon input of 3_
+  * _Example input : 3_
+  * _Example output : ping_
+* _Returns "pong" upon input of 5_
+  * _Example input : 5_
+  * _Example output : pong_
+* _Returns the word "ping-pong" upon input of 15_
+  * _Example input : 15_
+  * _Example output : ping-pong_
+* _Returns "ping" upon input of any number divisible by 3_
+  * _Example input : 6_
+  * _Example output : ping_
+* _Returns "pong" upon input of any number divisible by  5_
+  * _Example input : 25_
+  * _Example output : pong_
+* _Returns the word "ping-pong" upon input of any number divisible by 15_
+  * _Example input : 30_
+  * _Example output : ping-pong_
+* _Returns an array counting to any number inputted by the user except any input number divisible by 3, 5 or 15_
+  * _Example input : 7_
+  * _Example output : 1, 2, 3, 4, 5, 7_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_{There are no known bugs in this program.}_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_{Please let the author know if you have questions. Kate Byars katebyars5@gmail.com}_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_{JavaScript, JQuery, Bootstrap, HTML, CSS}_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*{MIT}*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2016 **_{Kate Byars}_**
