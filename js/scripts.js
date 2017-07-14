@@ -23,15 +23,16 @@ $(document).ready(function() {
   }
 
   function getResult(anArray, userInput) {
-    var aNumber = parseInt(userInput);
-      if ((userInput%3!>0) && (userInput%5!>0) && (userInput%15!=0)) {
-        returnCountDown(anArray, userInput);
-        return anArray;
-      } else if (userInput==="3") {
+    var theInput = parseInt(userInput);
+
+      if (theInput%3===0 && theInput%5!=0) {
         return "ping";
-      } else if (userInput==="5") {
-       return "pong";
-     } else if (userInput==="15") {
+      } else if (theInput%5===0 && theInput%15===0) {
        return "ping-pong";
+     } else if (theInput%5===0) {
+       return "pong";
+     } else if ((theInput%3!=0)||(theInput%5!=0)) {
+       returnCountDown(anArray, userInput);
+       return anArray;
      }
 }
