@@ -3,30 +3,30 @@ $(document).ready(function() {
   $("form#userInput").submit(function(event) {
     var input = $("input:text").val();
     var newArray = [];
-    var newNumber = parseInt(input);
-    var result = returnCountDown(newArray, newNumber);
-    alert(result.reverse());
 
+    var result = returnCountDown(newArray, input);
 
-    returnCountDown(newArray, newNumber, userInput)
-    $("#result").append(result + "<br>");
+    $("#result").append((result.reverse()) + "<br>");
     event.preventDefault();
   });
 });
 
 ///Back End Logic///
 
-// if (userInput === "3") {
-//        return("ping");
-//      } else if {
 
-  function returnCountDown(anArray, aNumber) {
-    // var anArray = [];
-    anArray.push(aNumber);
-    // var aNumber = "";
-        for (var i = aNumber; aNumber > 1; i += 1) {
-            aNumber -= 1 ;
-            anArray.push(aNumber);
+
+  function returnCountDown(anArray, userInput) {
+
+    if (userInput = "3") {
+      return "ping";
+    } else if (userInput = "5") {
+      return "pong";
+    } else {
+        var aNumber = parseInt(userinput);
+        anArray.push(aNumber);
+          for (var i = aNumber; aNumber > 1; i += 1) {
+              aNumber -= 1 ;
+              anArray.push(aNumber);
+          }
+          return anArray;
         }
-        return anArray;
-      }
