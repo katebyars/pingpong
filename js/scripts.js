@@ -2,30 +2,31 @@ $(document).ready(function() {
 ///Front End Logic///
   $("form#userInput").submit(function(event) {
     var input = $("input:text").val();
-    var result = returnArray(input);
+    var newArray = [];
+    var newNumber = parseInt(input);
+    var result = returnCountDown(newArray, newNumber);
+    alert(result.reverse());
+
+
+    returnCountDown(newArray, newNumber, userInput)
     $("#result").append(result + "<br>");
     event.preventDefault();
-    // });
   });
 });
 
 ///Back End Logic///
 
+// if (userInput === "3") {
+//        return("ping");
+//      } else if {
 
-  function returnArray(inputtedNumber) {
-    var newArray = [];
-    var newNumber = parseInt(inputtedNumber);
-    newArray.push(newNumber);
-
-      if (inputtedNumber === "3") {
-      alert("ping");
-    } else if (inputtedNumber != "3") {
-        for (var i = 0; i <= newNumber; i += 1) {
-          while (newNumber >= 2) {
-            var newNumber = newNumber-1;
-            newArray.push(newNumber);
-            return(newArray);
-          }
+  function returnCountDown(anArray, aNumber) {
+    // var anArray = [];
+    anArray.push(aNumber);
+    // var aNumber = "";
+        for (var i = aNumber; aNumber > 1; i += 1) {
+            aNumber -= 1 ;
+            anArray.push(aNumber);
         }
+        return anArray;
       }
-    }
