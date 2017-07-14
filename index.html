@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Ping Pong</title>
   </head>
   <body>
-
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Let's Play!</h1>
+      </div>
+      <form id="userInput">
+          <label for="input">Enter your number here:</label>
+          <input type="text" name="input">
+          <br>
+          <button type="submit" name="button">Let's Play!</button>
+      </form>
+      <div id="outputArea">
+        <p>
+          Yay.
+        </p>
+        <span>
+          <ul id="list"></ul>
+        </span>
+      </div>
+    </div>
   </body>
 </html>
