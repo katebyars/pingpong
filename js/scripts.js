@@ -16,11 +16,16 @@ $(document).ready(function() {
     var newArray = [];
     var newNumber = parseInt(inputtedNumber);
     newArray.push(newNumber);
-      for (var i = 0; i <= newNumber; i += 1) {
-        while (newNumber >= 2) {
-          var newNumber = newNumber-1;
-          newArray.push(newNumber);
-          return(newArray);
+
+      if (inputtedNumber === "3") {
+      alert("ping");
+    } else if (inputtedNumber != "3") {
+        for (var i = 0; i <= newNumber; i += 1) {
+          while (newNumber >= 2) {
+            var newNumber = newNumber-1;
+            newArray.push(newNumber);
+            return(newArray);
+          }
         }
+      }
     }
-  }

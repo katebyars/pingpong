@@ -13,7 +13,7 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * _User can enter a value._
 * _Returns the value of 1_
 * _Returns an array counting to 2_
-* _Returns are amended to a new list item_
+* _Returns are amended as a new item below the previous answer_
 * _Returns "ping"_
 * _Returns an array counting to 4_
 * _Returns the word "pong"_
