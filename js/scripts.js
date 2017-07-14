@@ -11,13 +11,6 @@ $(document).ready(function() {
 
 ///Back End Logic///
 
-  // function getResult (userInput, anArray) {
-  //   if (userInput != 3 ) {
-  //
-  //   returnCountDown(anArray, userInput);
-  //   }
-  // }
-  //
   function returnCountDown(anArray, userInput) {
     var aNumber = parseInt(userInput);
     anArray.push(aNumber);
@@ -30,9 +23,8 @@ $(document).ready(function() {
   }
 
   function getResult(anArray, userInput) {
-    // alert("hi");
-    // debugger;
-      if ((userInput!="3") && (userInput!="5") && (userInput!="15")) {
+    var aNumber = parseInt(userInput);
+      if ((userInput%3!>0) && (userInput%5!>0) && (userInput%15!=0)) {
         returnCountDown(anArray, userInput);
         return anArray;
       } else if (userInput==="3") {
