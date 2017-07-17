@@ -2,6 +2,9 @@
   text-align: center;
 }
 .container {
+  overflow-wrap: normal;
+  overflow-wrap: breakword;
+  word-wrap: break-word;
 }
 ol {
   text-align: left;
@@ -22,6 +25,9 @@ ol, label {
 }
 .col-md-6 {
   margin-top: 30%;
+  overflow-wrap: normal;
+  overflow-wrap: breakword;
+  word-wrap: break-word;
 }
 button {
   margin-top: 25px;
@@ -76,4 +82,13 @@ h3 span {
   color: #66d9ff;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
   letter-spacing: -4px;
+}
+body {
+  overflow-wrap: normal;
+  overflow-wrap: breakword;
+  word-wrap: break-word;
+}
+
+#result {
+  font-size: 20px;
 }
