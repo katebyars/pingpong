@@ -1,16 +1,16 @@
-#mainpanel {
-  text-align: center;
-}
+
 .container {
   overflow-wrap: normal;
   overflow-wrap: breakword;
   word-wrap: break-word;
 }
-ol {
+ol, ul {
   text-align: left;
+  list-style: none;
+  color: gray;
 }
 p, ol, li, h1, .white, label {
-  color: white;
+  color: gray;
 }
 .white {
   font-size: 44px;
@@ -36,7 +36,7 @@ button {
 }
 .button {
     position: relative;
-    background-color: #4CAF50;
+    background-color: #gray;
     border: none;
     font-size: 28px;
     color: #FFFFFF;
@@ -48,6 +48,7 @@ button {
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
+
 }
 .button:after {
     content: "";
@@ -70,25 +71,27 @@ button {
 h3 {
   /* margin: 20px; */
   font-family: "Paytone One";
-  color: #202020;
+  color: #gray;
   text-transform: uppercase;
   letter-spacing: -2px;
 }
 h3 span {
   display: block;
   margin: 11px 0 17px 0;
-  font-size: 80px;
-  line-height: 80px;
-  color: #66d9ff;
+  font-size: 40px;
+  line-height: 60px;
+  color: #gray;
   text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
   letter-spacing: -4px;
+  text-align: center;
 }
 body {
+  background-color: pink;
   overflow-wrap: normal;
   overflow-wrap: breakword;
   word-wrap: break-word;
 }
 
-#result {
-  font-size: 20px;
+.result {
+  font-size: 14px;
 }

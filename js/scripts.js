@@ -1,39 +1,54 @@
 $(document).ready(function() {
 ///Front End Logic///
   $("form#userInput").submit(function(event) {
-    var input = $("input:text").val();
-    var newArray = [];
-    var result = getResult(newArray, input);
-    $("#result").append(result + "<br>");
+    var input = ("");
+    var result = [];
+    var resultArray =[];
+    input = $("input:text").val();
+    result = returnCountDown(resultArray, input);
+    appendAsList(result);
     event.preventDefault();
+    $("#output").addClass(".result");
   });
-});
 
 ///Back End Logic///
-
-function returnCountDown(anArray, userInput) {
-  var aNumber = parseInt(userInput);
-  anArray.push(aNumber);
-
-  for (var i = aNumber; aNumber > 1; i += 1) {
-      aNumber -= 1 ;
-      anArray.push(aNumber);
+  function returnCountDown(anArray, userInput) {
+    var newArray = [];
+    parseInt(userInput);
+    anArray.push(userInput);
+    for (var i = userInput; userInput > 1; i += 1) {
+      userInput -= 1 ;
+      anArray.push(userInput);
+    }
+    anArray.reverse();
+    anArray.forEach(function(part) {
+      if (part%3===0 && part%5!=0) {
+          newArray.push("ping");
+      } else if (part%5===0 && part%15===0) {
+         newArray.push("ping-pong");
+      } else if (part%5===0) {
+         newArray.push("pong");
+      } else {
+        newArray.push(part);
+      }
+    });
+    return newArray;
   }
-  anArray.reverse();
-  return anArray;
-}
 
-function getResult(anArray, userInput) {
-  var theInput = parseInt(userInput);
-
-  if (theInput%3===0 && theInput%5!=0) {
-      return "ping";
-  } else if (theInput%5===0 && theInput%15===0) {
-     return "ping-pong";
-  } else if (theInput%5===0) {
-     return "pong";
-  } else if ((theInput%3!=0)||(theInput%5!=0)) {
-     returnCountDown(anArray, userInput);
-     return anArray;
+  function appendAsList(anyArray) {
+    $("#output").empty();
+    anyArray.forEach(function(object) {
+      $(".result").append("<li>" + object + "<br>");
+    });
   }
-}
+
+
+});
+
+
+
+
+
+// function replaceNumbers(anArrayOfNumbers){
+
+// }

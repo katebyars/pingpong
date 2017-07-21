@@ -9,27 +9,42 @@
   </head>
   <body>
     <div class="container">
-      <img src="img/color.jpg" id="bg" alt="pingpong">
-      <div class="row" id="mainpanel">
+      <div class="row">
         <div class="col-md-6">
-          <form id="userInput">
-            <h3><span>The Rules:</span></h3>
-            <ol>
-              <li>Only numbers allowed, but enter any number!</li>
-              <li>Inputs divisible by 3 return 'Ping'</li>
-              <li>Inputs divisible by 5 become 'Pong'</li>
-              <li>Inputs divisible by 15 return 'Ping-pong'</li>
-            </ol>
-            <label for="input">Enter your number here:</label>
-            <input type="text" name="input"><br>
-            <button class="button" type="submit" name="button">Let's Play!</button>
-          </form>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3><span>The Rules:</span></h3>
+            </div>
+            <div class="panel-body">
+              <form id="userInput">
+                <ol>
+                  <li>Only numbers allowed, but enter any number!</li>
+                  <li>Inputs divisible by 3 return 'Ping'</li>
+                  <li>Inputs divisible by 5 become 'Pong'</li>
+                  <li>Inputs divisible by 15 return 'Ping-pong'</li>
+                </ol>
+                <label for="input">Enter your number here:</label>
+                <input type="text" name="input"><br>
+                <button class="button center-block" type="submit" name="button">Let's Play!</button>
+              </form>
+            </div>
+          </div>
         </div>
         <div class="col-md-6">
-        <div id="outputArea">
-          <span class="white" id="result"><h1></h1></span>
-         </div>
-       </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3><span>Results</span></h3>
+            </div>
+            <div class="panel-body">
+              <div id="outputArea">
+                <ul>
+                  <span id="output" class="white result">
+                  </span>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
