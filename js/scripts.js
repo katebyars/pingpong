@@ -10,7 +10,6 @@ $(document).ready(function() {
     event.preventDefault();
     $("#output").addClass(".result");
   });
-
 ///Back End Logic///
   function returnCountDown(anArray, userInput) {
     var newArray = [];
@@ -34,15 +33,12 @@ $(document).ready(function() {
     });
     return newArray;
   }
-
   function appendAsList(anyArray) {
     $("#output").empty();
     anyArray.forEach(function(object) {
       $(".result").append("<li>" + object + "<br>");
     });
   }
-
-
 });
 
 
